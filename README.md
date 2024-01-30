@@ -1,5 +1,4 @@
 # test-pca
-*Date: 1/19/2024*
 
 A vignette for running PCA from scratch for Einstein Omics Club to run on the HPC. Adapted from Kevin Blighe: [Biostars Post](https://www.biostars.org/p/335605/)
 
