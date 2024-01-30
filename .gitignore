@@ -1,3 +1,6 @@
 # Ignore directories:
 /metadata_1KG/
 /raw-data_1KG/
+
+# Ignore logs
+*.out

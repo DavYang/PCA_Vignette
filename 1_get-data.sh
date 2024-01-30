@@ -3,23 +3,19 @@
 #SBATCH --time=2-00:00:00
 #SBATCH --partition=normal
 #SBATCH --mail-type=BEGIN,END,FAIL
-#SBATCH --mail-user=david.yang2@einsteinmed.edu
+#SBATCH --mail-user=<your_email>
 #SBATCH --nodes=1
 #SBATCH --mem=8gb
-#SBATCH --tasks-per-node=8
 #SBATCH --output=log1-wget.%A_%a.out
-
-# source /public/apps/conda3/etc/profile.d/conda.sh
-# conda activate DYenv
 
 # Make directories for data and metadata
 data_dir="raw-data_1KG"
 metadata_dir="metadata_1KG"
 
-# mkdir $data_dir
+mkdir $data_dir
 echo "Directory created: $data_dir"
 
-# mkdir $metadata_dir
+mkdir $metadata_dir
 echo "Directory created: $metadata_dir"
 
 # Download the data
