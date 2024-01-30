@@ -2,15 +2,13 @@
 #SBATCH --job-name=bcf_all_chr
 #SBATCH --time=2-00:00:00
 #SBATCH --partition=normal
-#SBATCH --mail-type=END,FAIL
-#SBATCH --mail-user=david.yang2@einsteinmed.edu
 #SBATCH --nodes=1
 #SBATCH --mem=8gb
 #SBATCH --tasks-per-node=8
 #SBATCH --output=log3-bcf_all_chr.%A_%a.out
 
 # Set directories
-main_dir="/gs/gsfs0/shared-lab/greally-lab/David/test-pca"
+main_dir=$(pwd)  # Use $(pwd) to get the current working directory
 REF="$main_dir/grch37_ref"
 INP="$main_dir/raw-data_1KG"
 OUT="$main_dir/bcf_1KG"

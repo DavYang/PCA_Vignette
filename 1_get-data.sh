@@ -2,8 +2,6 @@
 #SBATCH --job-name=wget1
 #SBATCH --time=2-00:00:00
 #SBATCH --partition=normal
-#SBATCH --mail-type=BEGIN,END,FAIL
-#SBATCH --mail-user=<your_email>
 #SBATCH --nodes=1
 #SBATCH --mem=8gb
 #SBATCH --output=log1-wget.%A_%a.out

@@ -2,8 +2,6 @@
 #SBATCH --job-name=wget2
 #SBATCH --time=2-00:00:00
 #SBATCH --partition=normal
-#SBATCH --mail-type=BEGIN,END,FAIL
-#SBATCH --mail-user=david.yang2@einsteinmed.edu
 #SBATCH --nodes=1
 #SBATCH --mem=8gb
 #SBATCH --tasks-per-node=8

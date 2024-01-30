@@ -1,6 +1,7 @@
 # Ignore directories:
 /metadata_1KG/
 /raw-data_1KG/
+/grch37_ref/
 
 # Ignore logs
 *.out
